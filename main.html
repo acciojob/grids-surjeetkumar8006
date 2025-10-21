@@ -4,35 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Grid Layout</title>
-  <!-- ✅ Bootstrap CSS (v5.3) -->
+  <!-- ✅ Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <style>
-    /* ✅ Container styling */
     .container {
       max-width: 600px;
       border: 5px solid rgb(4, 255, 4);
       background-color: rgb(41, 0, 0);
     }
-
-    /* ✅ Row styling */
     .row {
       border: 5px solid rgb(255, 188, 188);
       height: 200px;
     }
-
-    /* ✅ Column styling */
     .col {
       border: 2px dotted rgb(38, 38, 43);
     }
 
-    /* ✅ Individual background colors */
-    .row1-col1 { background-color: teal; }
-    .row1-col2 { background-color: thistle; }
-    .row2-col1 { background-color: tomato; }
-    .row2-col2 { background-color: turquoise; }
-    .row3-col1 { background-color: violet; }
-    .row3-col2 { background-color: yellowgreen; }
+    /* Individual background colors */
+    .r1c1 { background-color: teal; }
+    .r1c2 { background-color: thistle; }
+    .r2c1 { background-color: tomato; }
+    .r2c2 { background-color: turquoise; }
+    .r3c1 { background-color: violet; }
+    .r3c2 { background-color: yellowgreen; }
   </style>
 </head>
 <body class="text-center text-white">
@@ -41,37 +36,37 @@
     
     <!-- ✅ Row 1 -->
     <div class="row">
-      <div class="col-md-4 col-sm-6 col-6 row1-col1 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 col-sm-6 col-6 r1c1 d-flex align-items-center justify-content-center">
         Row 1 - Col 1
       </div>
-      <div class="col-md-8 col-sm-6 col-6 row1-col2 d-flex align-items-center justify-content-center">
+      <div class="col-md-8 col-sm-6 col-6 r1c2 d-flex align-items-center justify-content-center">
         Row 1 - Col 2
       </div>
     </div>
 
-    <!-- ✅ Row 2 -->
-    <div class="row">
-      <div class="col-md-4 offset-md-2 col-sm-6 col-6 row2-col1 d-flex align-items-center justify-content-center">
+    <!-- ✅ Row 2 (justify-content-between added) -->
+    <div class="row justify-content-between">
+      <div class="col-md-4 offset-md-2 col-sm-6 col-6 r2c1 d-flex align-items-center justify-content-center">
         Row 2 - Col 1
       </div>
-      <div class="col-md-4 col-sm-6 col-6 row2-col2 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 col-sm-6 col-6 r2c2 d-flex align-items-center justify-content-center">
         Row 2 - Col 2
       </div>
     </div>
 
     <!-- ✅ Row 3 -->
     <div class="row justify-content-center">
-      <div class="col-md-4 col-sm-6 col-6 row3-col1 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 col-sm-6 col-6 r3c1 d-flex align-items-center justify-content-center">
         Row 3 - Col 1
       </div>
-      <div class="col-md-4 col-sm-6 col-6 row3-col2 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 col-sm-6 col-6 r3c2 d-flex align-items-center justify-content-center">
         Row 3 - Col 2
       </div>
     </div>
 
   </div>
 
-  <!-- ✅ Bootstrap JS (optional) -->
+  <!-- ✅ Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
